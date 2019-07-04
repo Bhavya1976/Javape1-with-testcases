@@ -53,7 +53,7 @@ public class PalindromeEvenSumTest {
     @Test
     public void givenNumberShouldReturnErrorMessage(){
         String result = sum.CheckingPalindrome(0);
-        assertEquals(" Enter the valid number",result);
+        assertEquals("0 is palindrome and sum of even numbers is less than 25",result);
     }
 
 }

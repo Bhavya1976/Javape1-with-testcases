@@ -6,8 +6,8 @@ public class CharacterRepition {
     // Method Declaration
     public String repeatSubstring(String str,int number){
 
-        String result=" ";
-        String result1=" "; //String varible declaration
+        String result="";
+        String result1=""; //String varible declaration
         for(int i=0;i<=number - 1;i++){
             result1 += str.substring(str.length() - number);  //String repition and Concatination
             result = str+result1;

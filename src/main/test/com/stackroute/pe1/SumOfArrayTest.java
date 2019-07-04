@@ -20,28 +20,11 @@ public class SumOfArrayTest{
         add = null;
     }
     @Test
-    public void givenNumberShouldPrintRandomNumberSumMessage(){
+    public void givenNumberShouldReturnSumOfArrayMessage(){
         //Arrange
         //Act
-        int result=add.sumOfArray( 10 );
+        int result=add.sumOfArray();
         //Assert
-        assertEquals("  ",result);
+        assertEquals(49,result);
     }
-    @Test
-    public void givenNumberShouldReturnIndexOutOfRangeMessage(){
-        //Arrange
-        //Act
-        int  result=add.sumOfArray(11);
-        //Assert
-        assertEquals(" ",result);
-    }
-    @Test
-    public void givenNumberShouldReturnNullMessage(){
-        //Arrange
-        //Act
-       int result=add.sumOfArray( 0);
-        //Assert
-        assertEquals(" ",result);
-    }
-
 }

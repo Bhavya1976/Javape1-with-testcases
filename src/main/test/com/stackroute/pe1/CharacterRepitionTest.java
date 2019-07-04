@@ -39,14 +39,14 @@ public class CharacterRepitionTest {
         }
 
         @Test
-        public void givenOneStringContainOneCharOneNumberShouldReturnResultMessage(){
+        public void givenOneStringContainOneCharOneNumberShouldReturnNegativeMessage(){
             //arrange
 
             //act
-            String result = repeat.repeatSubstring(" ya",5);
+            String result = repeat.repeatSubstring(" pa",-5);
 
             //assert
-            assertEquals("papapapapapa",result);
+            assertEquals("",result);
         }
 
         @Test
@@ -54,7 +54,7 @@ public class CharacterRepitionTest {
             //arrange
 
             //act
-            String result=repeat.repeatSubstring("Bhavya ",-7);
+            String result=repeat.repeatSubstring("Tom ",1);
 
             //assert
             assertEquals("Tom",result);

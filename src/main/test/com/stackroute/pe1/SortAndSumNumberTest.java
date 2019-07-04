@@ -19,33 +19,15 @@ public class SortAndSumNumberTest {
         sort=null;
     }
     @Test
-    public void givenNumberShouldReturnSortSumAndLimitMessage(){
-        //Arrange
-        //Act
-        SortAndSumNumber.Result result=sort.sort(3456);
-        //Assert
-        assertEquals("Sorted number in non-increasing order 6543",result);
-        assertEquals("Sum of even numbers 10",result);
-        assertEquals(false,result);
+    public void givenNumberShouldReturnSortAndSumOfNumber(){
+       int result = sort.arraySorting();
+       assertEquals(sort.arraySorting(),result);
     }
     @Test
-    public void givenNumberAndStringShouldReturnSortSumAndLimitMessage(){
-        //Arrange
-        //Act
-        SortAndSumNumber.Result result=sort.sort(-3652);
-        //Assert
-        assertEquals("Sorted number in non-increasing order 0",result);
-        assertEquals("Sum of even numbers 0",result);
+    public void givenNumberAndStringShouldReturnBooleanMessage() {
+        int res = sort.arraySorting();
+        boolean result = sort.isBoolean(res);
         assertEquals(false,result);
     }
-    @Test
-    public void givenNumberZeroShouldReturnSortSumAndLimitMessage(){
-        //Arrange
-        //Act
-        SortAndSumNumber.Result result=sort.sort(0);
-        //Assert
-        assertEquals("Sorted number in non-increasing order 0",result);
-        assertEquals("Sum of even numbers 0",result);
-        assertEquals(false,result);
-    }
+
 }

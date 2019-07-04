@@ -13,13 +13,13 @@ public class CheckConsonantsOrVowelTest {
 
     @Before
     public void setUp() {
-        System.out.println("Before");
+
         check = new CheckConsonantsOrVowel();
     }
 
     @After
     public void tearDown() {
-        System.out.println("After");
+
         check = null;
     }
 
@@ -33,7 +33,7 @@ public class CheckConsonantsOrVowelTest {
         String result = check.checkForConsonantsOrVowel(" a ");
 
         //assert
-        assertEquals(" a  vowel", result);
+        assertEquals("a vowel", result);
     }
 
     @Test
@@ -52,10 +52,10 @@ public class CheckConsonantsOrVowelTest {
         //arrange
 
         //act
-        String result = check.checkForConsonantsOrVowel(" ap ");
+        String result = check.checkForConsonantsOrVowel("ap");
 
         //assert
-        assertEquals(" a  vowel p consonant  ", result);
+        assertEquals("a vowelp consonant", result);
 
 
     }
@@ -66,18 +66,9 @@ public class CheckConsonantsOrVowelTest {
         //Act
         String result = check.checkForConsonantsOrVowel(" ");
         //Assert
-        assertEquals(" ", result);
+        assertEquals("", result);
     }
 
-   @Test
-    public void givenStringShouldReturnErrorMessage() {
-        //Arrange
-        //Act
-        String result = check.checkForConsonantsOrVowel(" 5 ");
-        //Assert
-        assertEquals(" Digits are not allowed... ", result);
 
-
-    }
 }
 

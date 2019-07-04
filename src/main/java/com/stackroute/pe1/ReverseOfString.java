@@ -1,4 +1,4 @@
-package main.java.com.stackroute.pe2;
+package main.java.com.stackroute.pe1;
 import java.util.Scanner;
 
 public class ReverseOfString {

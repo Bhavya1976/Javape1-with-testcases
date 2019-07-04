@@ -13,7 +13,7 @@ public class CheckingEvenOrOdd {
 
            }else {
 
-              System.out.println("Print Error Message as : Enter the value within the limit"); // printing error message
+             return "Enter the value within the limit";
 
            }
            return str;                                                                         // return the string.

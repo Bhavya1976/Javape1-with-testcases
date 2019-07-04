@@ -10,24 +10,18 @@ import java.lang.Class;
 
 public class SumOfArray{
 
-    public static int sumOfArray(int number){
+    public static int sumOfArray(){
+
         int sum=0;
-       // int result[];
-        Scanner s = new Scanner(System.in);
-        System.out.println("Enter no. of elements you want in array:");
-        number= s.nextInt();
-        int array[] = new int[number];
-        System.out.println("Enter all the elements:");
-        for(int i = 0; i < number; i++)
+
+        int array[] = {1,2,3,10,33};
+
+        for(int i = 0; i < array.length; i++)
         {
-            array[i] = s.nextInt();
             sum = sum + array[i];
         }
-       // result[] = sum;
-        System.out.println("Sum:"+sum);
 
-    return sum;
-
+        return sum;
     }
 
 

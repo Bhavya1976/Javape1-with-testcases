@@ -10,13 +10,13 @@ public class CheckingEvenOrOddTest {
     CheckingEvenOrOdd check;
     @Before
     public void setUp(){
-        System.out.println("Before");
+
         check=new CheckingEvenOrOdd();
     }
     @After
     public void tearDown()
     {
-        System.out.println("After");
+
         check=null;
     }
     @BeforeClass
@@ -35,7 +35,7 @@ public class CheckingEvenOrOddTest {
         String result=check.checkingEvenOrOdd(33);
 
         //assert
-        assertEquals("Entered value is out of range ",result);
+        assertEquals("Enter the value within the limit",result);
     }
 
     @Test
@@ -54,7 +54,7 @@ public class CheckingEvenOrOddTest {
         //arrange
 
         //act
-        String result=check.checkingEvenOrOdd(69);
+        String result=check.checkingEvenOrOdd(29);
 
         //assert
         assertEquals("Tom",result);

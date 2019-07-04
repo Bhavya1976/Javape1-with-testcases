@@ -32,7 +32,7 @@ public class NumberIterationTest {
         //Act
         String result=iterate.iteratnumber(0);
         //Assert
-        assertEquals(" ",result);
+        assertEquals("",result);
     }
     @Test
     public void givenNumberShouldReturnMessageReturn(){
@@ -40,7 +40,7 @@ public class NumberIterationTest {
         //Act
         String result=iterate.iteratnumber(-1);
         //Assert
-        assertEquals(" ",result);
+        assertEquals("",result);
     }
 
 }
